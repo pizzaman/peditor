@@ -18,6 +18,7 @@ END_EVENT_TABLE()
 MainFrame::MainFrame(const wxString &title)
 : wxFrame(NULL, wxID_ANY, title)
 {
+    
     wxMenu *fileMenu = new wxMenu();
     wxMenu *aboutMenu = new wxMenu();
     aboutMenu->Append(wxID_NEW,wxT("&About\tF1"),wxT("show about dialog"));
@@ -31,8 +32,10 @@ MainFrame::MainFrame(const wxString &title)
     CreateStatusBar(2);
     SetStatusText("welcome to my frame");
     
-    CodeEditor *code = new CodeEditor(this,1);
-    code->initComponent();
+//    CodeEditor *code = new CodeEditor(this,1);
+//    code->initComponent();
+    
+    
 }
 
 void MainFrame::OnAbout(wxCommandEvent &event)

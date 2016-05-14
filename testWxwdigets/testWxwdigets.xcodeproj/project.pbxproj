@@ -8,28 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		9606ACC61A74B23A00D1008F /* MainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9606ACC41A74B23A00D1008F /* MainFrame.cpp */; };
-		96C9167D1A2E1C94006F2C3A /* minimal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96C9167C1A2E1C94006F2C3A /* minimal.cpp */; };
-		96F703CF1AEDF39C0075AA76 /* libwx_osx_cocoa.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F703CA1AEDF2710075AA76 /* libwx_osx_cocoa.dylib */; };
+		9666548B1CE7252F00690CE3 /* PMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 966654891CE7252F00690CE3 /* PMain.cpp */; };
 		96F703D21AEDF50B0075AA76 /* CodeEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96F703D01AEDF50B0075AA76 /* CodeEditor.cpp */; };
-		96F703D71AEE7D250075AA76 /* ConfigFileUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96F703D51AEE7D250075AA76 /* ConfigFileUtil.cpp */; };
+		96FBF5921C608EC100083359 /* libwx_osx_cocoa.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FBF58D1C608EB600083359 /* libwx_osx_cocoa.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		96F703C91AEDF2710075AA76 /* PBXContainerItemProxy */ = {
+		96FBF58C1C608EB600083359 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96F703C41AEDF2700075AA76 /* wxcocoa.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 65C47DFD6E243724A83603F3;
 			remoteInfo = dynamic;
 		};
-		96F703CB1AEDF2710075AA76 /* PBXContainerItemProxy */ = {
+		96FBF58E1C608EB600083359 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96F703C41AEDF2700075AA76 /* wxcocoa.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D025E39C79E3E119D19686C;
 			remoteInfo = static;
 		};
-		96F703CD1AEDF3920075AA76 /* PBXContainerItemProxy */ = {
+		96FBF5901C608EBD00083359 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96F703C41AEDF2700075AA76 /* wxcocoa.xcodeproj */;
 			proxyType = 1;
@@ -53,19 +52,19 @@
 /* Begin PBXFileReference section */
 		9606ACC41A74B23A00D1008F /* MainFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainFrame.cpp; path = testWxwdigets/MainFrame.cpp; sourceTree = "<group>"; };
 		9606ACC51A74B23A00D1008F /* MainFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainFrame.h; path = testWxwdigets/MainFrame.h; sourceTree = "<group>"; };
+		966654891CE7252F00690CE3 /* PMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PMain.cpp; path = testWxwdigets/PMain.cpp; sourceTree = "<group>"; };
+		9666548A1CE7252F00690CE3 /* PMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMain.h; path = testWxwdigets/PMain.h; sourceTree = "<group>"; };
 		96C9164B1A2E1134006F2C3A /* testWxwdigets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testWxwdigets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C916731A2E1AF4006F2C3A /* wxcocoa.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = wxcocoa.xcconfig; sourceTree = "<group>"; };
 		96C916741A2E1AF4006F2C3A /* wxdebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = wxdebug.xcconfig; sourceTree = "<group>"; };
 		96C916751A2E1AF4006F2C3A /* wxrelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = wxrelease.xcconfig; sourceTree = "<group>"; };
 		96C916791A2E1C2A006F2C3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C9167C1A2E1C94006F2C3A /* minimal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minimal.cpp; path = testWxwdigets/minimal.cpp; sourceTree = "<group>"; };
 		96E11F641A45CAC700804E11 /* osx_cocoa-unicode-static-3.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "osx_cocoa-unicode-static-3.0"; sourceTree = "<group>"; };
 		96E11F681A45CAC700804E11 /* setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup.h; sourceTree = "<group>"; };
-		96F703C41AEDF2700075AA76 /* wxcocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wxcocoa.xcodeproj; path = "../../../env/wxWidgets-3.0.2/build/osx/wxcocoa.xcodeproj"; sourceTree = "<group>"; };
+		96F703C41AEDF2700075AA76 /* wxcocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wxcocoa.xcodeproj; path = "../../../../env/wxWidgets-3.0.2/build/osx/wxcocoa.xcodeproj"; sourceTree = "<group>"; };
 		96F703D01AEDF50B0075AA76 /* CodeEditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CodeEditor.cpp; path = testWxwdigets/CodeEditor.cpp; sourceTree = "<group>"; };
 		96F703D11AEDF50B0075AA76 /* CodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodeEditor.h; path = testWxwdigets/CodeEditor.h; sourceTree = "<group>"; };
 		96F703D31AEE7D1C0075AA76 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; name = config; path = testWxwdigets/config; sourceTree = "<group>"; };
-		96F703D51AEE7D250075AA76 /* ConfigFileUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigFileUtil.cpp; sourceTree = "<group>"; };
 		96F703D61AEE7D250075AA76 /* ConfigFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigFileUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F703CF1AEDF39C0075AA76 /* libwx_osx_cocoa.dylib in Frameworks */,
+				96FBF5921C608EC100083359 /* libwx_osx_cocoa.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +117,8 @@
 				96F703D31AEE7D1C0075AA76 /* config */,
 				96F703D01AEDF50B0075AA76 /* CodeEditor.cpp */,
 				96F703D11AEDF50B0075AA76 /* CodeEditor.h */,
-				96C9167C1A2E1C94006F2C3A /* minimal.cpp */,
+				966654891CE7252F00690CE3 /* PMain.cpp */,
+				9666548A1CE7252F00690CE3 /* PMain.h */,
 				9606ACC41A74B23A00D1008F /* MainFrame.cpp */,
 				9606ACC51A74B23A00D1008F /* MainFrame.h */,
 			);
@@ -167,23 +167,22 @@
 			path = wx;
 			sourceTree = "<group>";
 		};
-		96F703C51AEDF2700075AA76 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				96F703CA1AEDF2710075AA76 /* libwx_osx_cocoa.dylib */,
-				96F703CC1AEDF2710075AA76 /* libwx_osx_cocoa_static.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		96F703D41AEE7D250075AA76 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				96F703D51AEE7D250075AA76 /* ConfigFileUtil.cpp */,
 				96F703D61AEE7D250075AA76 /* ConfigFileUtil.h */,
 			);
 			name = util;
 			path = testWxwdigets/util;
+			sourceTree = "<group>";
+		};
+		96FBF5881C608EB600083359 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96FBF58D1C608EB600083359 /* libwx_osx_cocoa.dylib */,
+				96FBF58F1C608EB600083359 /* libwx_osx_cocoa_static.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +199,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				96F703CE1AEDF3920075AA76 /* PBXTargetDependency */,
+				96FBF5911C608EBD00083359 /* PBXTargetDependency */,
 			);
 			name = testWxwdigets;
 			productName = testWxwdigets;
@@ -234,7 +233,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 96F703C51AEDF2700075AA76 /* Products */;
+					ProductGroup = 96FBF5881C608EB600083359 /* Products */;
 					ProjectRef = 96F703C41AEDF2700075AA76 /* wxcocoa.xcodeproj */;
 				},
 			);
@@ -246,18 +245,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		96F703CA1AEDF2710075AA76 /* libwx_osx_cocoa.dylib */ = {
+		96FBF58D1C608EB600083359 /* libwx_osx_cocoa.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
 			path = libwx_osx_cocoa.dylib;
-			remoteRef = 96F703C91AEDF2710075AA76 /* PBXContainerItemProxy */;
+			remoteRef = 96FBF58C1C608EB600083359 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		96F703CC1AEDF2710075AA76 /* libwx_osx_cocoa_static.a */ = {
+		96FBF58F1C608EB600083359 /* libwx_osx_cocoa_static.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libwx_osx_cocoa_static.a;
-			remoteRef = 96F703CB1AEDF2710075AA76 /* PBXContainerItemProxy */;
+			remoteRef = 96FBF58E1C608EB600083359 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -268,19 +267,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9606ACC61A74B23A00D1008F /* MainFrame.cpp in Sources */,
-				96C9167D1A2E1C94006F2C3A /* minimal.cpp in Sources */,
 				96F703D21AEDF50B0075AA76 /* CodeEditor.cpp in Sources */,
-				96F703D71AEE7D250075AA76 /* ConfigFileUtil.cpp in Sources */,
+				9666548B1CE7252F00690CE3 /* PMain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		96F703CE1AEDF3920075AA76 /* PBXTargetDependency */ = {
+		96FBF5911C608EBD00083359 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = dynamic;
-			targetProxy = 96F703CD1AEDF3920075AA76 /* PBXContainerItemProxy */;
+			targetProxy = 96FBF5901C608EBD00083359 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

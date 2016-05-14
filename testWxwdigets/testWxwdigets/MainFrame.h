@@ -10,6 +10,7 @@
 #define __testWxwdigets__MainFrame__
 
 #include <stdio.h>
+#include <wx/snglinst.h>
 
 class MainFrame:public wxFrame
 {
@@ -19,6 +20,8 @@ public:
     void OnAbout(wxCommandEvent& event);
 private:
     DECLARE_EVENT_TABLE();
+protected:
+    wxLanguage m_lang;
 };
 
 #endif /* defined(__testWxwdigets__MainFrame__) */
