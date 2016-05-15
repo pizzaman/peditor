@@ -8,6 +8,7 @@
 
 #include "MainFrame.h"
 #include "CodeEditor.h"
+#include <wx/xrc/xmlres.h>
 
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
 EVT_MENU(wxID_NEW, MainFrame::OnAbout)
@@ -19,18 +20,20 @@ MainFrame::MainFrame(const wxString &title)
 : wxFrame(NULL, wxID_ANY, title)
 {
     
-    wxMenu *fileMenu = new wxMenu();
-    wxMenu *aboutMenu = new wxMenu();
-    aboutMenu->Append(wxID_NEW,wxT("&About\tF1"),wxT("show about dialog"));
-    fileMenu->Append(wxID_EXIT,wxT("&Exit...\tAlt-x"),wxT("Quit this programe"));
-    
-    wxMenuBar *bar = new wxMenuBar();
-    bar->Append(aboutMenu, wxT("&About"));
-    bar->Append(fileMenu, wxT("&Exit"));
-    
-    SetMenuBar(bar);
-    CreateStatusBar(2);
-    SetStatusText("welcome to my frame");
+    wxXmlResource::Get()->LoadFrame(this, NULL, wxT("MyFrame1"));
+//    
+//    wxMenu *fileMenu = new wxMenu();
+//    wxMenu *aboutMenu = new wxMenu();
+//    aboutMenu->Append(wxID_NEW,wxT("&About\tF1"),wxT("show about dialog"));
+//    fileMenu->Append(wxID_EXIT,wxT("&Exit...\tAlt-x"),wxT("Quit this programe"));
+//    
+//    wxMenuBar *bar = new wxMenuBar();
+//    bar->Append(aboutMenu, wxT("&About"));
+//    bar->Append(fileMenu, wxT("&Exit"));
+//    
+//    SetMenuBar(bar);
+//    CreateStatusBar(2);
+//    SetStatusText("welcome to my frame");
     
 //    CodeEditor *code = new CodeEditor(this,1);
 //    code->initComponent();

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9606ACC61A74B23A00D1008F /* MainFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9606ACC41A74B23A00D1008F /* MainFrame.cpp */; };
 		9666548B1CE7252F00690CE3 /* PMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 966654891CE7252F00690CE3 /* PMain.cpp */; };
+		96AFA1371CE7965700CE2CA3 /* config in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96F703D31AEE7D1C0075AA76 /* config */; };
 		96F703D21AEDF50B0075AA76 /* CodeEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96F703D01AEDF50B0075AA76 /* CodeEditor.cpp */; };
 		96FBF5921C608EC100083359 /* libwx_osx_cocoa.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FBF58D1C608EB600083359 /* libwx_osx_cocoa.dylib */; };
 /* End PBXBuildFile section */
@@ -42,8 +43,9 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 7;
 			files = (
+				96AFA1371CE7965700CE2CA3 /* config in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +400,7 @@
 					"$(inherited)",
 					"$(WXROOT)/build-release/libs",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.9;
 				USER_HEADER_SEARCH_PATHS = "$(WXROOT)/include $(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include";
@@ -443,6 +446,7 @@
 					"$(inherited)",
 					"$(WXROOT)/build-release/libs",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.9;
 				USER_HEADER_SEARCH_PATHS = "$(WXROOT)/include $(WXROOT)/build/osx/setup/$(WXTOOLKIT)/include";

@@ -8,6 +8,8 @@
 
 #include "PMain.h"
 #include "MainFrame.h"
+#include <wx/filename.h>
+#include <wx/xrc/xmlres.h>
 
 IMPLEMENT_APP(PMain)
 
@@ -21,6 +23,19 @@ bool PMain::OnInit()
 {
     if ( !wxApp::OnInit() )
         return false;
+
+    wxFileName fname(argv[0]);
+    wxString cfgdb = fname.GetPath(wxPATH_GET_VOLUME);
+    cfgdb = cfgdb + ("/../Resources/config/");
+    
+//    cfgdb = wxFileName::GetHomeDir() + ("/.wxSQLitePlus");
+    
+    wxXmlResource::Get()->InitAllHandlers();
+    bool result = wxXmlResource::Get()->LoadAllFiles(cfgdb);
+    if (!result)
+    {
+        return false;
+    }
     
     MainFrame *frame = new MainFrame("Minimal wxWidgets App");
     frame->Show(true);
