@@ -10,6 +10,7 @@
 #include "MainFrame.h"
 #include <wx/filename.h>
 #include <wx/xrc/xmlres.h>
+#include "PureMVC/PureMVC.hpp"
 
 IMPLEMENT_APP(PMain)
 
@@ -19,14 +20,22 @@ BEGIN_EVENT_TABLE( PMain, wxApp )
 
 END_EVENT_TABLE()
 
+using PureMVC::Interfaces::IFacade;
+using PureMVC::Patterns::Facade;
+
 bool PMain::OnInit()
 {
     if ( !wxApp::OnInit() )
         return false;
 
+    std::string st = "aaaa";
+    printf("aaa %s",st.c_str());
+    // Test Factory Method
+    IFacade &facade = Facade::getInstance("FacadeTestKey1");
     wxFileName fname(argv[0]);
     wxString cfgdb = fname.GetPath(wxPATH_GET_VOLUME);
     cfgdb = cfgdb + ("/../Resources/config/");
+    
     
 //    cfgdb = wxFileName::GetHomeDir() + ("/.wxSQLitePlus");
     

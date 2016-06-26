@@ -35,8 +35,8 @@ MainFrame::MainFrame(const wxString &title)
 //    CreateStatusBar(2);
 //    SetStatusText("welcome to my frame");
     
-//    CodeEditor *code = new CodeEditor(this,1);
-//    code->initComponent();
+    CodeEditor *code = new CodeEditor(this,1);
+    code->initComponent();
     
     
 }

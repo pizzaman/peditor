@@ -22,6 +22,6 @@ public:
     void initComponent();
 private:
     
-    void onFolderClick(wxStyledTextEvent &event);
-    wxStyledTextCtrl *textctrl;
+    void OnMarginClick(wxStyledTextEvent &event);
+    wxStyledTextCtrl *text;
 };

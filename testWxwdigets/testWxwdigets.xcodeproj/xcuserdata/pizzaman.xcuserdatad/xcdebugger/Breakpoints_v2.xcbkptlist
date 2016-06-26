@@ -37,13 +37,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "testWxwdigets/MainFrame.cpp"
-            timestampString = "451822597.775575"
+            filePath = "testWxwdigets/PMain.cpp"
+            timestampString = "487947820.6711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "MainFrame::OnQuit(wxCommandEvent &amp;event)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "PMain::OnInit()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

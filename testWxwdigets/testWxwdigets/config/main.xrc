@@ -4,9 +4,9 @@
         <style>wxDEFAULT_FRAME_STYLE|wxTAB_TRAVERSAL</style>  
         <size>500,300</size>  
         <title></title>  
-        <object class="wxButton" name="m_button1">  
-            <label>MyButton</label>  
-            <default>0</default>  
-        </object>  
-    </object>  
+<!--        <object class="CodeEditor" name="m_button1">  -->
+<!--            <label>MyButton</label>  -->
+<!--            <default>0</default>  -->
+<!--        </object>  -->
+    </object>
 </resource> 
