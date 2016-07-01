@@ -28,10 +28,10 @@ bool PMain::OnInit()
     if ( !wxApp::OnInit() )
         return false;
 
-    std::string st = "aaaa";
-    printf("aaa %s",st.c_str());
     // Test Factory Method
-    IFacade &facade = Facade::getInstance("FacadeTestKey1");
+    IFacade &facade = Facade::getInstance("facade");
+    std::string st = facade.getMultitonKey();
+    printf("aaa %s",st.c_str());
     wxFileName fname(argv[0]);
     wxString cfgdb = fname.GetPath(wxPATH_GET_VOLUME);
     cfgdb = cfgdb + ("/../Resources/config/");
